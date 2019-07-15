@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Limracoin Core consensus library
+Description: Library for the Limracoin consensus protocol.
+Version: 0.17.1
+Libs: -L${libdir} -llimracoinconsensus
+Cflags: -I${includedir}
+Requires.private: libcrypto

@@ -1,0 +1,4 @@
+qt/qt_liblimracoinqt_a-qrc_limracoin.o: qt/qrc_limracoin.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

@@ -1,0 +1,33 @@
+# /etc/conf.d/limracoind: config file for /etc/init.d/limracoind
+
+# Config file location
+#LIMRACOIND_CONFIGFILE="/etc/limracoin/limracoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $LIMRACOIND_USER)
+#LIMRACOIND_PIDDIR="/var/run/limracoind"
+
+# What filename to give the pidfile
+#LIMRACOIND_PIDFILE="${LIMRACOIND_PIDDIR}/limracoind.pid"
+
+# Where to write limracoind data (be mindful that the blockchain is large)
+#LIMRACOIND_DATADIR="/var/lib/limracoind"
+
+# User and group to own limracoind process
+#LIMRACOIND_USER="limracoin"
+#LIMRACOIND_GROUP="limracoin"
+
+# Path to limracoind executable
+#LIMRACOIND_BIN="/usr/bin/limracoind"
+
+# Nice value to run limracoind under
+#LIMRACOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#LIMRACOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for limracoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+LIMRACOIND_SIGTERM_TIMEOUT=60
